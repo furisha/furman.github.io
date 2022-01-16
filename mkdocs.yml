@@ -1,0 +1,50 @@
+site_name: Furman QA Docs
+site_url: https://furman.github.io
+
+nav:
+  - About: "index.md"
+  - QA Automations:
+      - Cypress (Javascript): "pages/qa-automations/qa_automations_cypress_javascript.md"
+      - Selenium (Java): "pages/qa-automations/qa_automations_selenium_java.md"
+      - Selenium (Python): "pages/qa-automations/qa_automations_selenium_python.md"
+      - Selenium (Python-SeleniumBase): "pages/qa-automations/qa_automations_selenium_python_seleniumbase.md"
+#  - About: "pages/about.md"
+#  - FAQ: "pages/faq.md"
+
+theme:
+  logo: assets/logo-furman.png
+  name: material
+  palette:
+      - scheme: default
+        toggle:
+          icon: material/toggle-switch-off-outline
+          name: Switch to dark mode
+      - scheme: slate
+        toggle:
+         icon: material/toggle-switch
+         name: Switch to light mode
+  features:
+    - search.suggest
+    - search.highlight
+    - search.tabs.link
+    - navigation.sections
+#  font:
+#    text: Roboto
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        fr: Français
+        de: German
+
+extra:
+  homepage: http://127.0.0.1:8000/
+
+markdown_extensions:
+  - attr_list
